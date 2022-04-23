@@ -3,7 +3,7 @@
 float Poly::QuadraticFormula(float a, float b, float c)
 {
 	//ax^2 + bx + c = 0	
-	
+	//something here
 }
 
 //solves x for x^2 + bx + c = 0
