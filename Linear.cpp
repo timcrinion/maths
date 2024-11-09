@@ -6,7 +6,13 @@ bool Linear::SolveLinear(double m, double c, double& outX)
 {
   if (m==0)
   {
-    return (c==0);
+    bool success = (c==0);
+    if (success)
+    {
+      constexpr double defaultValue = 0;
+      outX = defaultValue;
+    }
+    return success;
   }
 
   outX = -c/m;
